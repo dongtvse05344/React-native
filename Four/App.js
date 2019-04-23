@@ -11,12 +11,12 @@ import Trips from './screens/Trips';
 
 
 const MainNavigator = createBottomTabNavigator({
-  Explore:{
-    screen: Explore,
+  Trips:{
+    screen: Trips,
     navigationOptions:{
-      tabBarLabel:'EXPLORE',
+      tabBarLabel:'TRIPS',
       tabBarIcon:({tintColor})=>(
-        <Icon name="rocket" color={tintColor} size="{24}"/>
+        <Icon name="gift" color={tintColor} size="{24}"/>
       )
     }
   },
@@ -29,15 +29,17 @@ const MainNavigator = createBottomTabNavigator({
       )
     }
   },
-  Trips:{
-    screen: Trips,
+  Explore:{
+    screen: Explore,
     navigationOptions:{
-      tabBarLabel:'TRIPS',
+      tabBarLabel:'EXPLORE',
       tabBarIcon:({tintColor})=>(
-        <Icon name="gift" color={tintColor} size="{24}"/>
+        <Icon name="rocket" color={tintColor} size="{24}"/>
       )
     }
   },
+  
+  
   Inbox:{
     screen: Inbox,
     navigationOptions:{
